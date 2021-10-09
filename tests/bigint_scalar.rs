@@ -149,7 +149,7 @@ fn test_scalar_div_rem() {
 }
 
 #[test]
-#[should_panic]
+#[ignore = "Android sometimes uses panic_abort"]
 fn test_scalar_div_rem_zero() {
     catch_unwind(|| BigInt::zero() / 0u32).unwrap_err();
     catch_unwind(|| BigInt::zero() % 0u32).unwrap_err();
