@@ -6,7 +6,7 @@ index 2a19faf..a4348f4 100644
  }
  
  #[test]
-+#[should_panic]
++#[ignore = "Android sometimes uses panic_abort"]
  fn test_scalar_div_rem_zero() {
      catch_unwind(|| BigInt::zero() / 0u32).unwrap_err();
      catch_unwind(|| BigInt::zero() % 0u32).unwrap_err();
@@ -18,7 +18,7 @@ index 7c34f7e..5b9f3ea 100644
  }
  
  #[test]
-+#[should_panic]
++#[ignore = "Android sometimes uses panic_abort"]
  fn test_scalar_div_rem_zero() {
      catch_unwind(|| BigUint::zero() / 0u32).unwrap_err();
      catch_unwind(|| BigUint::zero() % 0u32).unwrap_err();
