@@ -56,7 +56,7 @@ rust_library {
     host_supported: true,
     crate_name: "num_bigint",
     cargo_env_compat: true,
-    cargo_pkg_version: "0.4.2",
+    cargo_pkg_version: "0.4.3",
     srcs: [
         "src/lib.rs",
         ":copy_num-bigint_build_out",
@@ -81,7 +81,7 @@ rust_test {
     host_supported: true,
     crate_name: "num_bigint",
     cargo_env_compat: true,
-    cargo_pkg_version: "0.4.2",
+    cargo_pkg_version: "0.4.3",
     srcs: [
         "src/lib.rs",
         ":copy_num-bigint_build_out",
@@ -110,7 +110,7 @@ rust_defaults {
     name: "num-bigint_test_defaults",
     crate_name: "num_bigint",
     cargo_env_compat: true,
-    cargo_pkg_version: "0.4.2",
+    cargo_pkg_version: "0.4.3",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     edition: "2018",
@@ -187,6 +187,19 @@ rust_test {
     host_supported: true,
     srcs: [
         "tests/biguint_scalar.rs",
+        ":copy_num-bigint_build_out",
+    ],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "num-bigint_test_tests_fuzzed",
+    defaults: ["num-bigint_test_defaults"],
+    host_supported: true,
+    srcs: [
+        "tests/fuzzed.rs",
         ":copy_num-bigint_build_out",
     ],
     test_options: {
