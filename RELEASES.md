@@ -1,3 +1,12 @@
+# Release 0.4.3 (2021-11-02)
+
+- [GHSA-v935-pqmr-g8v9]: [Fix unexpected panics in multiplication.][228]
+
+**Contributors**: @arvidn, @cuviper, @guidovranken
+
+[228]: https://github.com/rust-num/num-bigint/pull/228
+[GHSA-v935-pqmr-g8v9]: https://github.com/rust-num/num-bigint/security/advisories/GHSA-v935-pqmr-g8v9
+
 # Release 0.4.2 (2021-09-03)
 
 - [Use explicit `Integer::div_ceil` to avoid the new unstable method.][219]
@@ -36,6 +45,12 @@
 [185]: https://github.com/rust-num/num-bigint/pull/185
 [194]: https://github.com/rust-num/num-bigint/pull/194
 [195]: https://github.com/rust-num/num-bigint/pull/195
+
+# Release 0.3.3 (2021-09-03)
+
+- [Use explicit `Integer::div_ceil` to avoid the new unstable method.][219]
+
+**Contributors**: @catenacyber, @cuviper
 
 # Release 0.3.2 (2021-03-04)
 
