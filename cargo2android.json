@@ -1,4 +1,8 @@
 {
+  "apex-available": [
+    "//apex_available:platform",
+    "com.android.virt"
+  ],
   "cfg-blocklist": [
     "use_addcarry"
   ],
