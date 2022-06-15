@@ -5,50 +5,18 @@
       "path": "external/rust/crates/oid-registry"
     }
   ],
-  "postsubmit": [
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
-      "name": "num-bigint_test_src_lib"
-    },
-    {
-      "name": "num-bigint_test_tests_bigint"
-    },
-    {
-      "name": "num-bigint_test_tests_bigint_bitwise"
-    },
-    {
-      "name": "num-bigint_test_tests_bigint_scalar"
-    },
-    {
-      "name": "num-bigint_test_tests_biguint"
-    },
-    {
-      "name": "num-bigint_test_tests_biguint_scalar"
-    },
-    {
-      "name": "num-bigint_test_tests_fuzzed"
-    },
-    {
-      "name": "num-bigint_test_tests_modpow"
-    },
-    {
-      "name": "num-bigint_test_tests_roots"
-    }
-  ],
   "presubmit": [
     {
+      "name": "apkdmverity.test"
+    },
+    {
       "name": "libapkverify.integration_test"
     },
     {
       "name": "libapkverify.test"
+    },
+    {
+      "name": "libidsig.test"
     },
     {
       "name": "microdroid_manager_test"
@@ -79,14 +47,23 @@
     },
     {
       "name": "num-bigint_test_tests_roots"
+    },
+    {
+      "name": "virtualizationservice_device_test"
     }
   ],
   "presubmit-rust": [
     {
+      "name": "apkdmverity.test"
+    },
+    {
       "name": "libapkverify.integration_test"
     },
     {
       "name": "libapkverify.test"
+    },
+    {
+      "name": "libidsig.test"
     },
     {
       "name": "microdroid_manager_test"
@@ -117,6 +94,9 @@
     },
     {
       "name": "num-bigint_test_tests_roots"
+    },
+    {
+      "name": "virtualizationservice_device_test"
     }
   ]
 }
