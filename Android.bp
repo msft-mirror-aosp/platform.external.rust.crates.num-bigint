@@ -74,6 +74,7 @@ rust_library {
         "libnum_integer",
         "libnum_traits",
     ],
+    vendor_available: true,
 }
 
 rust_test {
