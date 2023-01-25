@@ -7,21 +7,6 @@
   ],
   "presubmit": [
     {
-      "name": "apkdmverity.test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libidsig.test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
       "name": "num-bigint_test_src_lib"
     },
     {
@@ -47,28 +32,10 @@
     },
     {
       "name": "num-bigint_test_tests_roots"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     }
   ],
   "presubmit-rust": [
     {
-      "name": "apkdmverity.test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libidsig.test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
       "name": "num-bigint_test_src_lib"
     },
     {
@@ -94,9 +61,6 @@
     },
     {
       "name": "num-bigint_test_tests_roots"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     }
   ]
 }
